@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Latest Blog Posts</h1>
+
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <h2>How We Source Our Ingredients</h2>
+            <p>We are passionate about using only the freshest ingredients...</p>
+            <button class="read-more">Read More</button>
+            <div class="full-content">
+                <p>Our chefs work directly with local farmers and suppliers to ensure that the ingredients we use are sustainably sourced. We pride ourselves on creating dishes that highlight the natural flavors of fresh produce, high-quality meats, and
+                    sustainable seafood.</p>
+                <p>In addition to quality, we believe in transparency, so we share the stories of the farmers and artisans behind the ingredients we use. Our menu is constantly evolving, as we look for new ways to incorporate seasonal ingredients and support
+                    local businesses.</p>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <h2>New Dishes Added to the Menu</h2>
+            <p>We've recently updated our menu with some exciting new dishes...</p>
+            <button class="read-more">Read More</button>
+            <div class="full-content">
+                <p>This season, we’re introducing several new dishes that showcase our commitment to creativity and flavor. From fresh seafood dishes to plant-based options, our new menu has something for everyone.</p>
+                <p>We’ve been working closely with our chefs to develop dishes that not only taste amazing but also look beautiful on the plate. Our new appetizers and mains feature innovative combinations of textures and flavors, designed to surprise and
+                    delight our guests.</p>
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <h2>Celebrating Our 5th Anniversary</h2>
+            <p>It’s been five amazing years of serving our community...</p>
+            <button class="read-more">Read More</button>
+            <div class="full-content">
+                <p>In these five years, we’ve had the pleasure of meeting and serving so many wonderful people. We are grateful for all the support our community has given us, and we wanted to take this opportunity to reflect on how far we’ve come.</p>
+                <p>From our humble beginnings to becoming a beloved local hotspot, we’re proud of the milestones we’ve achieved. We’re excited to continue innovating, evolving, and offering a dining experience that leaves a lasting impression. Stay tuned
+                    for some exciting celebrations and events planned for our anniversary month!</p>
+            </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="blog-post">
+            <h2>Behind the Scenes: Meet Our Head Chef</h2>
+            <p>Get to know the mastermind behind our menu...</p>
+            <button class="read-more">Read More</button>
+            <div class="full-content">
+                <p>Our head chef, John Doe, has been with us since the beginning, and his passion for culinary excellence has been a key factor in our restaurant’s success. John brings over 20 years of experience to the table, having worked in kitchens around
+                    the world. His philosophy is simple: use the best ingredients, respect the traditions, and always keep an open mind when it comes to creativity.</p>
+                <p>In this post, we’ll take you behind the scenes in John’s kitchen and share some of his thoughts on what it takes to be a great chef. You’ll also find a few of his personal tips for aspiring cooks and some of his favorite recipes to try
+                    at home.</p>
+            </div>
+        </div>
+
+        <!-- Button to Load More Blog Posts -->
+        <button id="load-more">Load More Posts</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Name | All rights reserved</p>
+    </footer>
+
+    <script src="scriptblog.js"></script>
+</body>
+
+</html>
+<style>
+    .blog-post {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .blog-post h2 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+    
+    .blog-post p {
+        color: #555;
+    }
+    
+    .read-more {
+        background-color: #f39c12;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .read-more:hover {
+        background-color: #e67e22;
+    }
+    
+    .full-content {
+        display: none;
+        margin-top: 15px;
+        color: #777;
+    }
+    
+    #load-more {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    #load-more:hover {
+        background-color: #e67e22;
+    }
+    
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    
+    header {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #f39c12;
+        transform: scale(1.1);
+    }
+    
+    main {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu-item {
+        display: inline-block;
+        width: 30%;
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .menu-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .menu-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .gallery img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+    
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form button {
+        background-color: #f39c12;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    form button:hover {
+        background-color: #e67e22;
+    }
+    
+    @media (max-width: 768px) {
+        .menu-item {
+            width: 90%;
+            margin: 10px auto;
+        }
+        .gallery img {
+            width: 100%;
+        }
+        nav ul {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+    }
+</style>
+</style>
