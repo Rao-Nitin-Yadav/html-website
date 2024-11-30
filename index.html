@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Restaurant Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <img src="bg image.jpeg" alt="Background" class="background-image">
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Image -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Dawat restaurant</h1>
+                <p>Experience the finest cuisine in a warm and inviting atmosphere.</p>
+                <a href="menu.html" class="btn">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <!-- Featured Dishes Section -->
+        <section class="featured-dishes">
+            <h2>Our Signature Dishes</h2>
+            <div class="dish-gallery">
+                <div class="dish-item">
+                    <img src="dish2.jpeg" alt="Dish 1">
+                    <h3>Grilled Sandwich</h3>
+                </div>
+                <div class="dish-item">
+                    <img src="dish7.jpg" alt="Dish 2">
+                    <h3>Cheese Pizza</h3>
+                </div>
+                <div class="dish-item">
+                    <img src="dish5.jpeg" alt="Dish 3">
+                    <h3>Special fast food </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Preview Section -->
+        <section class="about-preview">
+            <h2>About Us</h2>
+            <p>We are passionate about providing high-quality, delicious meals. Our team works tirelessly to bring the finest ingredients to your plate.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </section>
+
+        <!-- Testimonial Preview Section -->
+        <section class="testimonials">
+            <h2>What Our Guests Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                    <p>"A wonderful dining experience! The food was incredible, and the staff made us feel like family."</p>
+                    <h4>- Sarah M.</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I love the atmosphere here. The food is always fresh, and the service is top-notch!"</p>
+                    <h4>- John D.</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Dawat Restaurant]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<style>
+    /* General Styling */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    /* Header Navigation */
+    
+    header {
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #f39c12;
+        transform: scale(1.1);
+    }
+    /* Hero Section */
+    
+    .hero {
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .hero .btn {
+        background-color: #f39c12;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero .btn:hover {
+        background-color: #e67e22;
+    }
+    /* Featured Dishes Section */
+    
+    .featured-dishes {
+        text-align: center;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    
+    .featured-dishes h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    .dish-gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .dish-item {
+        width: 30%;
+        text-align: center;
+    }
+    
+    .dish-item img {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+    }
+    
+    .dish-item h3 {
+        margin-top: 10px;
+    }
+    /* About Us Preview Section */
+    
+    .about-preview {
+        text-align: center;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    
+    .about-preview h2 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    
+    .about-preview .btn {
+        background-color: #f39c12;
+        color: white;
+        padding: 5px 10px;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .about-preview .btn:hover {
+        background-color: #e67e22;
+    }
+    /* Testimonials Section */
+    
+    .testimonials {
+        background-color: #f9f9f9;
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    .testimonials h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .testimonial-carousel {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .testimonial-item {
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .testimonial-item p {
+        font-size: 16px;
+        color: #666;
+    }
+    
+    .testimonial-item h4 {
+        font-size: 18px;
+        color: #333;
+        margin-top: 10px;
+    }
+    /* Position the background image */
+    
+    .background-image {
+        position: absolute;
+        /* Position it relative to the body */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        /* Ensures the image covers the entire viewport */
+        z-index: -1;
+        /* Places the image behind the content */
+    }
+</style>
